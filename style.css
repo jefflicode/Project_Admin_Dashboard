@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+  }
+  
+  .header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .searchIcon {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .searchBarGridPlacement {
+    grid-column: 3 / 9;
+    grid-row: 1 / 2;
+    margin-top: 15px;
+    
+  }
+
+  .searchBar {
+    width: 600px;
+    border-radius: 15px;   
+    height: 30px;
+    background-color: #E2E8F0;
+    border: none;
+  }
+
+  .notification {
+    grid-column: 10 / 11;
+    grid-row: 1 / 2;
+    font-size: 30px;
+    margin-top: 12px;
+  }
+
+  .smallUserName {
+    grid-column: 11 / 13;
+    grid-row: 1 / 2;
+    font-size: 25px;
+    margin-top: 13px;
+  }
+
+  .bigUserName {
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .buttonNew {
+    grid-column: 10 / 11;
+    grid-row: 3 / 4;
+  }
+
+  .buttonUpload {
+    grid-column: 11 / 12;
+    grid-row: 3 / 4;
+  }
+
+  .buttonShare {
+    grid-column: 12 / 13;
+    grid-row: 3 / 4;
+  }
+  
+  .threeButtons {
+    width: 100px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: #1A92D3;
+    color: white;
+    border: none;
+    margin-left: 15px;
+  }
+
+  .sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: #1A92D3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    color: white;
+  }
+
+  .dashboard, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    margin-left: 30px;
+  }
+  .dashboard {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    font-size: 35px;
+  }
+
+  .home {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    
+  }
+
+  .profile {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    font-size: 20px;
+  }
+
+  .messages {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    font-size: 20px;
+    
+  }
+
+  .history {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    font-size: 20px;
+    
+  }
+
+  .tasks {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+    font-size: 20px;
+    
+  }
+
+  .communities {
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+    font-size: 20px;
+    
+  }
+
+  .settings {
+    grid-column: 1 / 3;
+    grid-row: 11 / 12;
+    font-size: 20px;
+    
+  }
+
+  .support {
+    grid-column: 1 / 3;
+    grid-row: 12 / 13;
+    font-size: 20px;
+    
+  }
+
+  .privacy {
+    grid-column: 1 / 3;
+    grid-row: 13 / 14;
+    font-size: 20px;
+    
+  }
+
+  .projectSection {
+    grid-column: 2 / 5;
+    grid-row: 2 / 6;
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px repeat(8, 1fr);
+  }
+
+  .projectHeader {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  
+  .projects {
+    grid-column: 1 / 3;
+    grid-row: 2 / 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    margin-left: 15px;
+  }
+
+  .project {
+    width: 500px;
+    height: 200px;
+    border-radius: 9px;
+    background-color: white;
+  }
+
+  .announcementsTrend {
+    grid-column: 5 / 6;
+    grid-row: 2 / 6;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 55px repeat(8, 1fr);
+    background-color: #E2E8F0;
+  }
+
+  .announcementHeader {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-top: 30px;
+    /* margin-top: 30px;
+    margin-left: 29px; */
+  }
+
+  .announcementCard {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    
+  }
+
+  .trendingHeader {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    margin-top: 58px;
+  }
+
+  .trendingCard {
+    grid-column: 1 / 2;
+    grid-row: 6 / 10;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+
